@@ -1,0 +1,66 @@
+  <!-- <div class="container">
+    <h2>Create New Item</h2>
+  
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" formControlName="quantity" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price" formControlName="price" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" id="type" formControlName="type" class="form-control" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" formControlName="description" class="form-control"></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Create Item</button>
+    </form>
+  </div> -->
+
+  <div class="container">
+    <h2>Create New Item</h2>
+  
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="form-group">
+        <mat-label>Name:</mat-label>
+        <input matInput id="name" formControlName="name" required>
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <mat-label>Quantity:</mat-label>
+        <input matInput type="number" id="quantity" formControlName="quantity" required>
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <mat-label>Price:</mat-label>
+        <input matInput type="number" id="price" formControlName="price" required>
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <mat-label>Type:</mat-label>
+        <input matInput id="type" formControlName="type" required>
+      </mat-form-field>
+  
+      <mat-form-field class="form-group">
+        <mat-label>Description:</mat-label>
+        <textarea matInput id="description" formControlName="description"></textarea>
+      </mat-form-field>
+  
+      <button type="submit" mat-button class="btn btn-primary">Create Item</button>
+    </form>
+  </div>
+  

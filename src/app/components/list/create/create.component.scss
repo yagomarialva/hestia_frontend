@@ -1,0 +1,11 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Adjust the gap between form fields as needed */
+  }
+  
+  /* Additional styling for mat-form-field */
+  mat-form-field {
+    width: 100%;
+  }
+  
